@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CATEGORIES</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *{
+    	margin: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    	font-family: "Poppins", sans-serif;
+    }
+
+    section{
+    	position: relative;
+    	width: 100%;
+    	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+		background-color: #fff;
+    }
+    
+    header{
+    	position: relative;
+    	top: 0;
+    	width: 100%;
+    	padding: 30px 100px;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    
+    header .logo{
+    	position: relative;
+    	width: 200px;
+    }
+    
+    header .nav a{
+    	color: #1C335F;
+    	text-decoration: none;
+    	font-weight: 500;
+    	letter-spacing: 1px;
+    	padding: 2px 15px;
+    	border-radius: 20px;
+    	transition: 0.3s;
+    	transition-property: background;	
+    }
+    
+    header .nav a:not(:last-child){
+    	margin-right: 30px;
+    }
+    
+    header .nav a:hover{
+    	background: #EADCD3;
+    }
+    
+    .content{
+    	margin: auto 150px;
+    }
+    
+    .content .info h2{
+    	color: #F0C479;
+    	font-size: 60px;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 2px;
+    	line-height: 60px;
+    	margin-bottom: 30px;
+		font-family: Arial;
+    }
+    
+    .content .info h2 span{
+    	color: #CFA37E;
+    	font-size: 55px;
+    	text-transform: uppercase;
+    	font-weight: 600;
+		font-family: "Arial Bold";
+    }
+	
+	.banner{
+		width: 1050px;
+		margin-top: 20px;
+	}
+	
+	.poster{
+		width: 300px;
+		margin-left: 40px;
+	}
+	
+	.active{
+		background-color: white;
+	}
+	</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css">
+	<section>
+		<header>
+			<img src="../../IMAGES/ARROW.PNG" class="logo">
+			<div class="nav">
+				<a href="HOMEPAGE.html">Home</a>
+				<a href="ABOUTUS.html">About Us</a>
+				<a href="CATEGORIES.html" class="active">Categories</a>
+				<a href="CONTACTUS.html">Contact Us</a>
+			</div>
+		</header>
+		<div class="content">
+		<div class="info">
+			<h2>SMALL BUSINESS</h2>
+		</div>
+		</div>
+	</section>
+</body>
+</html>

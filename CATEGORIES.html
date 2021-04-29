@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CATEGORIES</title>
+	<script language="JavaScript">
+		function writeText(txt){
+		document.getElementById("desc").innerHTML=txt;
+		}
+		function dissolveText(txt){
+		document.getElementById("desc").innerHTML=txt;
+		}
+	</script>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+	
+    *{
+    	margin: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    	font-family: "Poppins", sans-serif;
+    }
+	body{
+		background-image: url(../IMAGES/CATEGORIES/background-cat.jpg);
+	}
+    section{
+    	position: relative;
+    	width: 100%;
+    	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: flex-start;
+		background-color: #fff;
+    }
+    
+    header{
+    	position: relative;
+    	top: 0;
+    	width: 100%;
+    	padding: 30px 100px;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    
+    header .logo{
+    	position: relative;
+    	width: 200px;
+    }
+    
+    header .nav a{
+    	color: #1C335F;
+    	text-decoration: none;
+    	font-weight: 500;
+    	letter-spacing: 1px;
+    	padding: 2px 15px;
+    	border-radius: 20px;
+    	transition: 0.3s;
+    	transition-property: background;	
+    }
+    
+    header .nav a:not(:last-child){
+    	margin-right: 30px;
+    }
+    
+    header .nav a:hover{
+    	background: #EADCD3;
+    }
+    
+    .content{
+    	margin: auto 150px;
+    }
+    
+    .content .info h2{
+    	color: #F0C479;
+    	font-size: 60px;
+    	text-transform: uppercase;
+    	font-weight: 800;
+    	letter-spacing: 2px;
+    	line-height: 60px;
+    	margin-bottom: 30px;
+		font-family: Arial;
+    }
+    
+    .content .info h2 span{
+    	color: #CFA37E;
+    	font-size: 55px;
+    	text-transform: uppercase;
+    	font-weight: 600;
+		font-family: "Arial Bold";
+    }
+	
+	.banner{
+		width: 1050px;
+		margin-top: 20px;
+	}
+	
+	.poster{
+		width: 300px;
+		margin-left: 40px;
+	}
+
+	p#desc{
+		text-align: center;
+		font-size: 25px;
+		font-weight: bold;
+		font-family: Poppins;
+		border: 2px solid black;
+		margin-left: 260px;
+		width: 50%;
+	}
+	</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css">
+	<section>
+		<header>
+			<img src="../IMAGES/ARROW.PNG" class="logo">
+			<div class="nav">
+				<a href="HOMEPAGE.html">Home</a>
+				<a href="ABOUTUS.html">About Us</a>
+				<a href="CATEGORIES.html">Categories</a>
+				<a>Contact Us</a>
+			</div>
+		</header>
+		<div class="content">
+		<div class="info">
+		    <center>
+			<img src="../IMAGES/CATEGORIES/categoriesTitle.png">
+			<br>
+			<img src="../IMAGES/CATEGORIES/thumbnails.png" usemap="#categories">
+			<map name="categories">
+				<area shape="rect" coords="16,22,176,177" href="CATEGORIESLINKS/FASHION.html" onMouseOver="writeText('New Normal Fashion Check!');";>
+				<area shape="rect" coords="193,22,357,177" href="CATEGORIESLINKS/FOOD.html" onMouseOver="writeText('FoodBytes')";>
+				<area shape="rect" coords="372,22,535,177" href="CATEGORIESLINKS/SELFCARE.html" onMouseOver="writeText('WonderSelf: Loving who you are ');" ;>
+				<area shape="rect" coords="14,212,177,370" href="CATEGORIESLINKS/HEALTH.html" onMouseOver="writeText('Mental Health & Physical Health <br> (Coping stress and anxiety)');" ;>
+				<area shape="rect" coords="193,212,355,370" href="CATEGORIESLINKS/ONLINECLASS.html" onMouseOver="writeText('10 Study Tips for Online Learning ');" ;>
+				<area shape="rect" coords="374,212,537,370" href="CATEGORIESLINKS/BUSINESS.html" onMouseOver="writeText('Making Extra Income in the Pandemic');" ;>
+			</map>
+			</center>
+			<br>
+			<p id="desc"></p>
+			<br><br><br>
+			
+		</div>
+		</div>
+	</section>
+</body>
+</html>
